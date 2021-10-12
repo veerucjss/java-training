@@ -77,6 +77,14 @@ public class Streams {
             System.out.println(employee.getEmployeeNo() + ": name:" + employee.getEmployeeName() + ": Salary:" + employee.getSalary());
         });
 
+        employees.stream().map(employeeModel -> {
+                    employeeModel.setEmployeeName(employeeModel.getEmployeeName() + ": Dummy Name");
+                    return employeeModel;
+                })
+                .forEach(employee -> {
+            System.out.println(employee.getEmployeeNo() + ": name:" + employee.getEmployeeName() + ": Salary:" + employee.getSalary());
+        });
+
         for (EmployeeModel employee: employees) {
 //            System.out.println(employee.getEmployeeNo() + " : " + employee.getEmployeeName());
 
