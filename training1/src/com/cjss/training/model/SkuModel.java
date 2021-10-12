@@ -35,4 +35,5 @@ public class SkuModel {
     public void setPrice(Float price) {
         this.price = price;
     }
+
 }
