@@ -14,7 +14,44 @@ import java.util.*;
  */
 public class Collections {
     public static void main(String args[]) {
+        Scanner inp = new Scanner(System.in);
 
+        String rollno;
+   
+        String name;
+   
+        String branch;
+   
+        int year;
+   
+        Student st = new Student();
+   
+        System.out.println("Enter the Rollno");
+   
+        rollno = st.setRno(inp.next());
+   
+        System.out.println("Enter the Name");
+   
+        name = st.setName(inp.next());
+   
+        System.out.println("Enter the Branch");
+   
+        branch=st.setBranch(inp.next());
+   
+        System.out.println("Enter the year");
+   
+        year=st.setYear(inp.nextInt());
+   
+        System.out.println("The student roll   :" +rollno);
+   
+        System.out.println("The student Name   :" +name);
+   
+        System.out.println("The student Branch :" +branch);
+   
+        System.out.println("The student Year   :" +year);
+   
+   /** close the task 1  Student related data **/
+   
         List al1 = new ArrayList();
         al1.add("Rama");
         al1.add("test1");
